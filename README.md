@@ -1,49 +1,35 @@
 # 🌿 AgroMeds
 
-```{=html}
 <p align="center">
-```
-`<img src="assets/logo.png" width="140" alt="AgroMeds Logo">`{=html}
-```{=html}
+  <img src="assets/banner.png" alt="AgroMeds Banner" width="100%">
 </p>
-```
-```{=html}
-<h1 align="center">
-```
-AgroMeds
-```{=html}
-</h1>
-```
-```{=html}
-<p align="center">
-```
-`<b>`{=html}A PHP & MySQL Based Agriculture E-Commerce
-Platform`</b>`{=html}`<br>`{=html} Helping users browse agricultural
-products, place orders, and manage farming-related purchases through a
-web application.
-```{=html}
-</p>
-```
-```{=html}
-<p align="center">
-```
-`<img src="assets/banner.png" alt="AgroMeds Banner">`{=html}
-```{=html}
-</p>
-```
-```{=html}
-<p align="center">
-```
-![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?logo=php)
-![MySQL](https://img.shields.io/badge/MySQL-10.4-4479A1?logo=mysql)
-![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap)
-![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript)
-![Status](https://img.shields.io/badge/Status-Completed-success)
-![License](https://img.shields.io/badge/License-MIT-green)
 
-```{=html}
+<h1 align="center">🌿 AgroMeds</h1>
+
+<p align="center">
+  <strong>A PHP & MySQL Based Agriculture E-Commerce Platform</strong>
 </p>
-```
+
+<p align="center">
+Helping users browse agricultural products, place orders, manage agricultural purchases, and connect with experts through a web-based platform.
+</p>
+
+<p align="center">
+  <img src="assets/logo.png" alt="AgroMeds Logo" width="140">
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/PHP-8.2-777BB4?logo=php&logoColor=white" alt="PHP">
+  <img src="https://img.shields.io/badge/MySQL-10.4-4479A1?logo=mysql&logoColor=white" alt="MySQL">
+  <img src="https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap&logoColor=white" alt="Bootstrap">
+  <img src="https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript&logoColor=black" alt="JavaScript">
+  <img src="https://img.shields.io/badge/Status-Completed-success" alt="Status">
+  <img src="https://img.shields.io/badge/License-MIT-green" alt="License">
+</p>
+
+---
+
+# 📑 Table of Contents
 
 ------------------------------------------------------------------------
 
@@ -61,7 +47,11 @@ web application.
 -   Database Overview
 -   Installation
 -   Screenshots
--   Continue to Part 2
+-   Database Documentation
+-   Authentication Flow
+-   Product workflow
+-   Admin Modules
+-   Future Improvements
 
 ------------------------------------------------------------------------
 
@@ -175,7 +165,7 @@ MySQL Database
 
 ------------------------------------------------------------------------
 
-# 📂 Project Organization
+# 📂 Project Structure
 
 ```text
 AgroMeds/
@@ -257,53 +247,116 @@ http://localhost/Farming_meds
 
 ## 🏠 User Module
 
-<p align="center">
-  <img src="screenshots/01-home.png" alt="Home Page" width="49%">
-  <img src="screenshots/02-login.png" alt="Login Page" width="49%">
-</p>
+### Home Page
 
 <p align="center">
-  <img src="screenshots/03-register.png" alt="Register Page" width="49%">
-  <img src="screenshots/04-products.png" alt="Products Page" width="49%">
+  <img src="screenshots/01-home.png" alt="Home Page" width="100%">
 </p>
 
-<p align="center">
-  <img src="screenshots/05-product-details.png" alt="Product Details" width="49%">
-  <img src="screenshots/06-cart.png" alt="Shopping Cart" width="49%">
-</p>
+### Login Page
 
 <p align="center">
-  <img src="screenshots/07-checkout.png" alt="Checkout Page" width="49%">
-  <img src="screenshots/08-orders.png" alt="Orders Page" width="49%">
+  <img src="screenshots/02-login.png" alt="Login Page" width="100%">
 </p>
 
+### Register Page
+
 <p align="center">
-  <img src="screenshots/09-profile.png" alt="User Profile" width="49%">
-  <img src="screenshots/10-expert-profile.png" alt="Expert Profile" width="49%">
+  <img src="screenshots/03-register.png" alt="Register Page" width="100%">
+</p>
+
+### Products Page
+
+<p align="center">
+  <img src="screenshots/04-products.png" alt="Products Page" width="100%">
+</p>
+
+### Product Details
+
+<p align="center">
+  <img src="screenshots/05-product-details.png" alt="Product Details" width="100%">
+</p>
+
+### Shopping Cart
+
+<p align="center">
+  <img src="screenshots/06-cart.png" alt="Shopping Cart" width="100%">
+</p>
+
+### Checkout
+
+<p align="center">
+  <img src="screenshots/07-checkout.png" alt="Checkout Page" width="100%">
+</p>
+
+### Orders
+
+<p align="center">
+  <img src="screenshots/08-orders.png" alt="Orders Page" width="100%">
+</p>
+
+### User Profile
+
+<p align="center">
+  <img src="screenshots/09-profile.png" alt="User Profile" width="100%">
+</p>
+
+### Expert Profile
+
+<p align="center">
+  <img src="screenshots/10-expert-profile.png" alt="Expert Profile" width="100%">
 </p>
 
 ---
 
 ## 🛠 Admin Module
 
-<p align="center">
-  <img src="screenshots/11-admin-login.png" alt="Admin Login" width="49%">
-  <img src="screenshots/12-admin-dashboard.png" alt="Admin Dashboard" width="49%">
-</p>
+### Admin Login
 
 <p align="center">
-  <img src="screenshots/13-admin-products.png" alt="Manage Products" width="49%">
-  <img src="screenshots/14-admin-orders.png" alt="Manage Orders" width="49%">
+  <img src="screenshots/11-admin-login.png" alt="Admin Login" width="100%">
 </p>
 
-<p align="center">
-  <img src="screenshots/15-admin-users.png" alt="Manage Users" width="49%">
-  <img src="screenshots/16-admin-categories.png" alt="Manage Categories" width="49%">
-</p>
+### Admin Dashboard
 
 <p align="center">
-  <img src="screenshots/17-admin-experts.png" alt="Manage Experts" width="49%">
-  <img src="screenshots/18-admin-payments.png" alt="Manage Payments" width="49%">
+  <img src="screenshots/12-admin-dashboard.png" alt="Admin Dashboard" width="100%">
+</p>
+
+### Product Management
+
+<p align="center">
+  <img src="screenshots/13-admin-products.png" alt="Manage Products" width="100%">
+</p>
+
+### Order Management
+
+<p align="center">
+  <img src="screenshots/14-admin-orders.png" alt="Manage Orders" width="100%">
+</p>
+
+### User Management
+
+<p align="center">
+  <img src="screenshots/15-admin-users.png" alt="Manage Users" width="100%">
+</p>
+
+### Category Management
+
+<p align="center">
+  <img src="screenshots/16-admin-categories.png" alt="Manage Categories" width="100%">
+</p>
+
+### Expert Management
+
+<p align="center">
+  <img src="screenshots/17-admin-experts.png" alt="Manage Experts" width="100%">
+</p>
+
+### Payment Management
+
+<p align="center">
+  <img src="screenshots/18-admin-payments.png" alt="Manage Payments" width="100%">
 </p>
 
 ------------------------------------------------------------------------
@@ -448,7 +501,7 @@ Users can:
 
 ------------------------------------------------------------------------
 
-# 📊 Admin Panel
+# 📊 Admin Module
 
 The administrator panel provides management for:
 
