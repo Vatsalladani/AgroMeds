@@ -179,7 +179,7 @@ Suggested screenshots:
 
 MSc IT Student
 
-Aspiring Backend Software Engineer
+Aspiring Software Engineer
 
 ---
 
