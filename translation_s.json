@@ -1,0 +1,47 @@
+{
+    "en": {
+        "title": "Settings",
+        "heading": "Settings",
+        "themeLabel": "Select Theme:",
+        "themeLight": "Light",
+        "themeDark": "Dark",
+        "themeBlueGradient": "Blue Gradient",
+        "themePinkGradient": "Pink Gradient",
+        "themeGreenGradient": "Green Gradient",
+        "languageLabel": "Select Language:",
+        "languageEnglish": "English",
+        "languageHindi": "Hindi",
+        "languageGujarati": "Gujarati",
+        "saveButton": "Save Settings"
+    },
+    "hi": {
+        "title": "सेटिंग्स",
+        "heading": "सेटिंग्स",
+        "themeLabel": "थीम चुनें:",
+        "themeLight": "हल्का",
+        "themeDark": "गहरा",
+        "themeBlueGradient": "नीला ग्रेडिएंट",
+        "themePinkGradient": "गुलाबी ग्रेडिएंट",
+        "themeGreenGradient": "हरा ग्रेडिएंट",
+        "languageLabel": "भाषा चुनें:",
+        "languageEnglish": "अंग्रेज़ी",
+        "languageHindi": "हिंदी",
+        "languageGujarati": "गुजराती",
+        "saveButton": "सेटिंग्स सहेजें"
+    },
+    "gu": {
+        "title": "સેટિંગ્સ",
+        "heading": "સેટિંગ્સ",
+        "themeLabel": "થીમ પસંદ કરો:",
+        "themeLight": "હલકો",
+        "themeDark": "ઘાટો",
+        "themeBlueGradient": "વાદળી ગ્રેડિએન્ટ",
+        "themePinkGradient": "ગુલાબી ગ્રેડિએન્ટ",
+        "themeGreenGradient": "લીલો ગ્રેડિએન્ટ",
+        "languageLabel": "ભાષા પસંદ કરો:",
+        "languageEnglish": "અંગ્રેજી",
+        "languageHindi": "હિન્દી",
+        "languageGujarati": "ગુજરાતી",
+        "saveButton": "સેટિંગ્સ સાચવો"
+    }
+}

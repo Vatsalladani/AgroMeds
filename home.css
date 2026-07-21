@@ -1,0 +1,297 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f8f5;
+}
+
+.header {
+    background: url('Images/bg4.jpeg') center/cover no-repeat;
+    color: white;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.header p {
+    font-size: 1.5rem;
+}
+
+.features i {
+    font-size: 3rem;
+    color: #28a745;
+}
+
+.card {
+    border: none;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer {
+    background-color: #28a745;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 40px 0;
+    width: 100%; /* Ensure footer spans full width */
+    position: relative; /* Default positioning */
+    margin-top: auto; /* Push footer to the bottom */
+}
+
+/* Ensure footer content is centered and spans full width */
+footer .container {
+    max-width: 1200px; /* Adjust as needed */
+    margin: 0 auto; /* Center the container */
+    padding: 0 20px; /* Add padding to prevent content from touching edges */
+}
+
+footer h5 {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    margin-bottom: 10px;
+}
+
+footer a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+footer .copyright {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.navbar .settings-icon {
+    font-size: 1.5rem;
+    color: #555;
+}
+.navbar .nav-link {
+    transition: all 0.3s ease-in-out;
+}
+
+
+.card {
+border: none;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+border-radius: 15px; /* Rounded corners */
+overflow: hidden; /* Ensures image stays within rounded borders */
+}
+
+.card:hover {
+transform: scale(1.05);
+box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+width: 100%;
+height: 250px; /* Fixed height for uniformity */
+object-fit: cover; /* Ensures images are well-fitted */
+border-radius: 15px 15px 0 0; /* Rounded top corners only */
+}
+
+.card-body {
+text-align: center;
+padding: 20px;
+}
+
+.btn-success {
+transition: background 0.3s ease;
+}
+
+.btn-success:hover {
+background-color: #218838;
+}
+
+.owl-carousel .item {
+transform: scale(0.8); /* Smaller size for non-active items */
+opacity: 0.6; /* Lower opacity for non-active items */
+transition: all 0.4s ease; /* Smooth transition */
+}
+
+.owl-carousel .center .item {
+transform: scale(1); /* Active item is larger */
+opacity: 1; /* Active item is fully visible */
+}
+
+/* Make the Owl Carousel container bigger */
+.owl-carousel {
+width: 150%;
+max-width: 1400px; /* Adjust as needed */
+margin: 0 auto;
+padding: 20px;
+height: 630px;
+}
+
+.owl-stage-outer {
+overflow: hidden !important; /* Ensure items are not clipped */
+}
+
+.owl-item {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.owl-nav {
+position: absolute;
+top: 50%;
+right: 0.1px;
+width: 105%;
+display: flex;
+justify-content: space-between;
+transform: translateY(-50%);
+}
+
+.owl-prev, .owl-next {
+background-color: rgba(0, 0, 0, 0.5) !important;
+width: 37px;
+color: white !important;
+font-size: 24px !important;
+padding: 10px 15px !important;
+border-radius: 50% !important;
+}
+
+.owl-prev:hover, .owl-next:hover {
+background-color: rgba(0, 0, 0, 0.8) !important;
+}
+.owl-stage {
+transition: 0.25s;
+width: 4267px;
+transform: translate3d(-1706px, 0px, 0px);
+height: 600px; /* Adjust height as needed */
+display: flex; /* Ensures items align properly */
+align-items: center; /* Centers items vertically */
+}
+
+.owl-item {
+width: 406.667px;
+margin-right: 20px;
+height: 500px; /* Increase height */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.item {
+height: 100%;
+width: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+#experts .owl-carousel .item {
+transform: scale(0.9);
+opacity: 0.7;
+transition: all 0.4s ease;
+}
+
+#experts .owl-carousel .center .item {
+transform: scale(1);
+opacity: 1;
+}
+
+#experts .card {
+height: 400px; /* Adjust height as needed */
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+}
+
+#experts .card img {
+height: 200px; /* Adjust image height */
+object-fit: cover;
+}
+/* General Styling */
+/* About Us Section */
+#about-us {
+padding: 80px 0;
+background-color: #f8f9fa;
+}
+
+#about-us h2 {
+font-size: 2.5rem;
+font-weight: bold;
+color: #2c3e50;
+margin-bottom: 40px;
+}
+
+#about-us .lead {
+font-size: 1.1rem;
+color: #495057;
+line-height: 1.8;
+margin-bottom: 30px;
+}
+
+/* Cards for Images */
+#about-us .card {
+border: none;
+border-radius: 10px;
+overflow: hidden;
+transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#about-us .card:hover {
+transform: translateY(-10px);
+box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+#about-us .card-img-top {
+height: 150px;
+object-fit: cover;
+}
+
+#about-us .card-body {
+padding: 15px;
+background-color: #fff;
+}
+
+#about-us .card-text {
+font-size: 1rem;
+font-weight: 500;
+color: #2c3e50;
+margin: 0;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+#about-us .col-md-6 {
+margin-bottom: 30px;
+}
+
+#about-us .card {
+margin-bottom: 20px;
+}
+}
+    

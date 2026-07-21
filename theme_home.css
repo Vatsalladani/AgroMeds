@@ -1,0 +1,336 @@
+    /* General Styles */
+    :root {
+        --primary-color:rgb(247, 248, 249);
+        --secondary-color: #6c757d;
+        --background-color: #ffffff;
+        --text-color: #000000;
+        --font-family: 'Arial', sans-serif;
+    }
+    
+    .theme-light {
+                --primary-color:rgb(237, 239, 241);
+                --secondary-color: #6c757d;
+                --background-color: #ffffff;
+                --text-color: #000000;
+                --font-family: 'Arial', sans-serif;
+            }
+    
+            .theme-dark {
+                --primary-color: #343a40;
+                --secondary-color:rgb(1, 5, 8);
+                --background-color: #121212;
+                --text-color: #ffffff;
+                --font-family: 'Arial', sans-serif;
+            }
+    
+            .theme-blue {
+                --primary-color:rgb(110, 179, 254);
+                --secondary-color: #0056b3;
+                --background-color: #e9f5ff;
+                --text-color: #000000;
+                --font-family: 'Arial', sans-serif;
+            }
+            .theme-green {
+        --primary-color: #28a745;
+        --secondary-color: #218838;
+        --background-color: #e8f5e9;
+        --text-color: #000000;
+        --font-family: 'Arial', sans-serif;
+    }
+    
+         .theme-pink {
+        --primary-color: #e83e8c;
+        --secondary-color: #d63384;
+        --background-color: #fff0f6;
+        --text-color: #000000;
+        --font-family: 'Arial', sans-serif;
+    }
+    
+         .theme-ocean {
+        --primary-color: #17a2b8;
+        --secondary-color: #138496;
+        --background-color: #e3f2fd;
+        --text-color: #000000;
+        --font-family: 'Arial', sans-serif;
+    }
+    
+         .theme-sunset  {
+        --primary-color: #ff7f50;
+        --secondary-color: #ff6347;
+        --background-color: #fff3e0;
+        --text-color: #000000;
+        --font-family: 'Arial', sans-serif;
+    }
+    
+       .theme-forest {
+        --primary-color: #228b22;
+        --secondary-color: #1e7e34;
+        --background-color: #e8f5e9;
+        --text-color: #000000;
+        --font-family: 'Arial', sans-serif;
+    }
+    
+        .theme-violet {
+        --primary-color: #8a2be2;
+        --secondary-color: #7b1fa2;
+        --background-color: #f3e5f5;
+        --text-color: #000000;
+        --font-family: 'Arial', sans-serif;
+    }
+    
+    
+            /* Add more themes as needed */
+    
+            /* Apply theme variables to all sections */
+            body {
+                background-color: var(--background-color);
+                color: var(--text-color);
+                font-family: var(--font-family);
+            }
+    
+            header {
+                background-color: var(--primary-color);
+                color: var(--text-color);
+            }
+    
+            .navbar {
+                background-color: var(--secondary-color);
+                color: var(--text-color);
+            }
+    
+            footer {
+                background-color: var(--primary-color);
+                color: var(--text-color);
+            }
+    
+            .card {
+                background-color: var(--background-color);
+                color: var(--text-color);
+                border: 1px solid var(--primary-color);
+            }
+           /* Apply theme variables to the Features section */
+    #features {
+        background-color: var(--primary-color);
+        color: var(--text-color);
+        padding: 20px; /* Adjust padding as needed */
+    }
+    
+    #features h4 {
+        color: var(--text-color);
+    }
+    
+    #features p {
+        color: var(--text-color);
+    }
+    
+    #features i {
+        color: var(--text-color); /* Icon color */
+    }
+    
+    /* Light theme-specific styles for the Features section */
+    .theme-light #features {
+        background-color: var(--primary-color); /* Use primary color for background */
+    }
+    
+    .theme-light #features h4,
+    .theme-light #features p,
+    .theme-light #features i {
+        color: green; /* Set text and icon color to green in light theme */
+    }
+    
+    /* Ensure the Features container covers the entire width */
+    #features .container {
+        width: 100%;
+        max-width: 100%; /* Ensure full width */
+        padding: 0; /* Remove default container padding */
+    }
+
+    
+    #features .col-md-4 {
+        padding: 20px; /* Add padding to columns */
+    }
+            .btn {
+                background-color: var(--primary-color);
+                color: var(--text-color);
+                border: 1px solid var(--secondary-color);
+            }
+    /* About Us section default styles */
+    #about-us {
+        padding: 20px 0; /* Adjust padding as needed */
+    }
+    
+    #about-us h2 {
+        color: var(--primary-color); /* Use primary color for the heading */
+    }
+    
+    #about-us .card {
+        background-color: var(--background-color); /* Use background color for cards */
+        color: var(--text-color); /* Use text color for cards */
+        border: 1px solid var(--primary-color); /* Use primary color for card borders */
+    }
+    
+    #about-us .card-text {
+        color: var(--primary-color); /* Use primary color for card text */
+    }
+    
+    /* Light theme-specific styles */
+    .theme-light #about-us {
+        background-color: #f8f9fa; /* Light background color */
+    }
+    
+    .theme-light #about-us h2 {
+        color: #28a745; /* Green color for the heading */
+    }
+    
+    .theme-light #about-us .card {
+        background-color: #ffffff; /* White background for cards */
+        border: 1px solid #28a745; /* Green border for cards */
+    }
+    
+    .theme-light #about-us .card-text {
+        color: #28a745; /* Green text color for card text */
+    }
+    
+    /* Dark theme-specific styles */
+    .theme-dark #about-us {
+        background-color: #1e1e1e; /* Dark background color */
+    }
+    
+    .theme-dark #about-us h2 {
+        color: #4caf50; /* Light green color for the heading */
+    }
+    
+    .theme-dark #about-us .card {
+        background-color: #2d2d2d; /* Dark background for cards */
+        border: 1px solid #4caf50; /* Light green border for cards */
+    }
+    
+    .theme-dark #about-us .card-text {
+        color: #4caf50; /* Light green text color for card text */
+    }
+    
+    /* Blue theme-specific styles */
+    .theme-blue #about-us {
+        background-color: #e3f2fd; /* Light blue background color */
+    }
+    
+    .theme-blue #about-us h2 {
+        color: #1976d2; /* Dark blue color for the heading */
+    }
+    
+    .theme-blue #about-us .card {
+        background-color: #ffffff; /* White background for cards */
+        border: 1px solid #1976d2; /* Dark blue border for cards */
+    }
+    
+    .theme-blue #about-us .card-text {
+        color: #1976d2; /* Dark blue text color for card text */
+    }
+    
+    /* Green theme-specific styles */
+    .theme-green #about-us {
+        background-color: #e8f5e9; /* Light green background color */
+    }
+    
+    .theme-green #about-us h2 {
+        color: #2e7d32; /* Dark green color for the heading */
+    }
+    
+    .theme-green #about-us .card {
+        background-color: #ffffff; /* White background for cards */
+        border: 1px solid #2e7d32; /* Dark green border for cards */
+    }
+    
+    .theme-green #about-us .card-text {
+        color: #2e7d32; /* Dark green text color for card text */
+    }
+    
+    /* Pink theme-specific styles */
+    .theme-pink #about-us {
+        background-color: #fff0f6; /* Light pink background color */
+    }
+    
+    .theme-pink #about-us h2 {
+        color: #e83e8c; /* Pink color for the heading */
+    }
+    
+    .theme-pink #about-us .card {
+        background-color: #ffffff; /* White background for cards */
+        border: 1px solid #e83e8c; /* Pink border for cards */
+    }
+    
+    .theme-pink #about-us .card-text {
+        color: #e83e8c; /* Pink text color for card text */
+    }
+    
+    /* Ocean theme-specific styles */
+    .theme-ocean #about-us {
+        background-color: #e0f7fa; /* Light ocean background color */
+    }
+    
+    .theme-ocean #about-us h2 {
+        color: #00bcd4; /* Ocean blue color for the heading */
+    }
+    
+    .theme-ocean #about-us .card {
+        background-color: #ffffff; /* White background for cards */
+        border: 1px solid #00bcd4; /* Ocean blue border for cards */
+    }
+    
+    .theme-ocean #about-us .card-text {
+        color: #00bcd4; /* Ocean blue text color for card text */
+    }
+    
+    /* Sunset theme-specific styles */
+    .theme-sunset #about-us {
+        background-color: #fff3e0; /* Light sunset background color */
+    }
+    
+    .theme-sunset #about-us h2 {
+        color: #ff7043; /* Sunset orange color for the heading */
+    }
+    
+    .theme-sunset #about-us .card {
+        background-color: #ffffff; /* White background for cards */
+        border: 1px solid #ff7043; /* Sunset orange border for cards */
+    }
+    
+    .theme-sunset #about-us .card-text {
+        color: #ff7043; /* Sunset orange text color for card text */
+    }
+    
+    /* Forest theme-specific styles */
+    .theme-forest #about-us {
+        background-color: #e8f5e9; /* Light forest background color */
+    }
+    
+    .theme-forest #about-us h2 {
+        color: #2e7d32; /* Forest green color for the heading */
+    }
+    
+    .theme-forest #about-us .card {
+        background-color: #ffffff; /* White background for cards */
+        border: 1px solid #2e7d32; /* Forest green border for cards */
+    }
+    
+    .theme-forest #about-us .card-text {
+        color: #2e7d32; /* Forest green text color for card text */
+    }
+    
+    /* Violet theme-specific styles */
+    .theme-violet #about-us {
+        background-color: #f3e5f5; /* Light violet background color */
+    }
+    
+    .theme-violet #about-us h2 {
+        color: #8a2be2; /* Violet color for the heading */
+    }
+    
+    .theme-violet #about-us .card {
+        background-color: #ffffff; /* White background for cards */
+        border: 1px solid #8a2be2; /* Violet border for cards */
+    }
+    
+    .theme-violet #about-us .card-text {
+        color: #8a2be2; /* Violet text color for card text */
+    }

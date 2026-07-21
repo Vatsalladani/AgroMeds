@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #56ab2f, #a8e063, #3b8d99);
+    background-size: 400% 400%;
+    animation: gradientAnimation 8s ease infinite;
+}
+
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-card {
+    display: flex;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    max-width: 800px;
+    width: 100%;
+}
+
+.login-image {
+    flex: 1;
+    background: url('Images/login_img.avif') no-repeat center center/cover;
+}
+
+.login-form {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.login-form h1 {
+    margin-bottom: 20px;
+}
+
+.login-form .form-control {
+    margin-bottom: 20px;
+}
+
+.login-form button {
+    background: #56ab2f;
+    color: white;
+    border: none;
+    padding: 4px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-form button:hover {
+    background: #3a8e1d;
+}
+
+.login-form .links {
+    margin-top: 20px;
+}
+
+.login-form .links a {
+    color: #3b8d99;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.login-form .links a:hover {
+    text-decoration: underline;
+}
+
+.language-select {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.language-select label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.language-select .dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.dropdown-item:hover {
+    background-color: #f0f0f0;
+}

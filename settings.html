@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | Modern UI</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+    <!-- Animate.css -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" rel="stylesheet">
+    <!-- Glide.js for carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css">
+    <style>
+        :root {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a29bfe;
+            --accent-color: #fd79a8;
+            --background-color: #f8f9fa;
+            --text-color: #2d3436;
+            --card-bg: #ffffff;
+        }
+
+        [data-theme="dark"] {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a29bfe;
+            --accent-color: #fd79a8;
+            --background-color: #121212;
+            --text-color: #f8f9fa;
+            --card-bg: #1e1e1e;
+        }
+
+        [data-theme="blue"] {
+            --primary-color: #0984e3;
+            --secondary-color: #74b9ff;
+            --accent-color: #00cec9;
+            --background-color: #f5f6fa;
+            --text-color: #2d3436;
+            --card-bg: #ffffff;
+        }
+
+        [data-theme="green"] {
+            --primary-color: #00b894;
+            --secondary-color: #55efc4;
+            --accent-color: #00cec9;
+            --background-color: #f5f6fa;
+            --text-color: #2d3436;
+            --card-bg: #ffffff;
+        }
+
+        [data-theme="pink"] {
+            --primary-color: #e84393;
+            --secondary-color: #fd79a8;
+            --accent-color: #fab1a0;
+            --background-color: #fdf2f5;
+            --text-color: #2d3436;
+            --card-bg: #ffffff;
+        }
+
+        [data-theme="ocean"] {
+            --primary-color: #0984e3;
+            --secondary-color: #00cec9;
+            --accent-color: #55efc4;
+            --background-color: #f0f8ff;
+            --text-color: #2d3436;
+            --card-bg: #ffffff;
+        }
+
+        [data-theme="sunset"] {
+            --primary-color: #e17055;
+            --secondary-color: #fab1a0;
+            --accent-color: #fdcb6e;
+            --background-color: #fff5e6;
+            --text-color: #2d3436;
+            --card-bg: #ffffff;
+        }
+
+        [data-theme="forest"] {
+            --primary-color: #00b894;
+            --secondary-color: #55efc4;
+            --accent-color: #00cec9;
+            --background-color: #f0fff4;
+            --text-color: #2d3436;
+            --card-bg: #ffffff;
+        }
+
+        [data-theme="violet"] {
+            --primary-color: #6c5ce7;
+            --secondary-color: #a29bfe;
+            --accent-color: #fd79a8;
+            --background-color: #f8f9fa;
+            --text-color: #2d3436;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            transition: all 0.3s ease;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .settings-container {
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 800px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .settings-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        h1 {
+            color: var(--primary-color);
+            font-weight: 700;
+            margin-bottom: 30px;
+            text-align: center;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h1::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+            border-radius: 2px;
+        }
+
+        .form-label {
+            font-weight: 600;
+            color: var(--primary-color);
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .form-label i {
+            margin-right: 10px;
+            font-size: 1.2rem;
+        }
+
+        .form-select {
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 12px 15px;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            background-color: var(--card-bg);
+            color: var(--text-color);
+        }
+
+        .form-select:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 0.25rem rgba(108, 92, 231, 0.25);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+            border: none;
+            border-radius: 10px;
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(108, 92, 231, 0.3);
+            margin-top: 20px;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(108, 92, 231, 0.4);
+        }
+
+        .btn-primary:active {
+            transform: translateY(0);
+        }
+
+        .theme-carousel {
+            margin: 20px 0;
+        }
+
+        .glide__slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .theme-option {
+            width: 80px;
+            height: 80px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .theme-option::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(255,255,255,0.2), rgba(255,255,255,0));
+        }
+
+        .theme-option.active {
+            transform: scale(1.1);
+            box-shadow: 0 0 0 3px var(--primary-color), 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .theme-name {
+            position: absolute;
+            bottom: 10px;
+            left: 0;
+            width: 100%;
+            text-align: center;
+            color: white;
+            font-weight: 600;
+            text-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+            font-size: 0.8rem;
+        }
+
+        .language-options {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .language-option {
+            flex: 1;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            background-color: var(--card-bg);
+        }
+
+        .language-option:hover {
+            border-color: var(--secondary-color);
+        }
+
+        .language-option.active {
+            border-color: var(--primary-color);
+            background-color: rgba(108, 92, 231, 0.1);
+            box-shadow: 0 0 0 2px var(--primary-color);
+        }
+
+        .language-flag {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .language-text {
+            font-weight: 600;
+        }
+
+        .floating-bg {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            opacity: 0.05;
+            background: radial-gradient(circle at center, var(--primary-color) 0%, transparent 70%);
+            animation: float 15s infinite alternate ease-in-out;
+        }
+
+        @keyframes float {
+            0% { transform: translate(0, 0); }
+            50% { transform: translate(50px, 50px); }
+            100% { transform: translate(-50px, -50px); }
+        }
+
+        .save-btn-container {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .save-btn-container::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                to bottom right,
+                transparent 45%,
+                rgba(255,255,255,0.3) 50%,
+                transparent 55%
+            );
+            animation: shine 3s infinite;
+            z-index: 0;
+        }
+
+        @keyframes shine {
+            0% { transform: translate(-50%, -50%) rotate(0deg); }
+            100% { transform: translate(-50%, -50%) rotate(360deg); }
+        }
+
+        .btn-primary {
+            position: relative;
+            z-index: 1;
+        }
+
+        @media (max-width: 768px) {
+            .settings-container {
+                padding: 30px 20px;
+            }
+            
+            .theme-option {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="floating-bg"></div>
+    
+    <div class="settings-container animate__animated animate__fadeIn">
+        <h1><i class="fas fa-cog"></i> Settings</h1>
+        
+        <form id="settingsForm">
+            <div class="mb-4">
+                <label for="language" class="form-label"><i class="fas fa-language"></i> Language</label>
+                <div class="language-options">
+                    <div class="language-option" data-lang="en">
+                        <div class="language-flag">🇬🇧</div>
+                        <div class="language-text">English</div>
+                    </div>
+                    <div class="language-option" data-lang="hi">
+                        <div class="language-flag">🇮🇳</div>
+                        <div class="language-text">Hindi</div>
+                    </div>
+                    <div class="language-option" data-lang="gu">
+                        <div class="language-flag">🇮🇳</div>
+                        <div class="language-text">Gujarati</div>
+                    </div>
+                </div>
+                <input type="hidden" id="language" name="language" value="en">
+            </div>
+            
+            <div class="mb-4">
+                <label class="form-label"><i class="fas fa-palette"></i> Theme</label>
+                <div class="theme-carousel glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <div class="glide__slides">
+                            <div class="glide__slide">
+                                <div class="theme-option active" data-theme="light" style="background: linear-gradient(135deg, #f8f9fa, #e9ecef);">
+                                    <div class="theme-name">Light</div>
+                                </div>
+                            </div>
+                            <div class="glide__slide">
+                                <div class="theme-option" data-theme="dark" style="background: linear-gradient(135deg, #121212, #1e1e1e);">
+                                    <div class="theme-name">Dark</div>
+                                </div>
+                            </div>
+                            <div class="glide__slide">
+                                <div class="theme-option" data-theme="blue" style="background: linear-gradient(135deg, #0984e3, #74b9ff);">
+                                    <div class="theme-name">Blue</div>
+                                </div>
+                            </div>
+                            <div class="glide__slide">
+                                <div class="theme-option" data-theme="green" style="background: linear-gradient(135deg, #00b894, #55efc4);">
+                                    <div class="theme-name">Green</div>
+                                </div>
+                            </div>
+                            <div class="glide__slide">
+                                <div class="theme-option" data-theme="pink" style="background: linear-gradient(135deg, #e84393, #fd79a8);">
+                                    <div class="theme-name">Pink</div>
+                                </div>
+                            </div>
+                            <div class="glide__slide">
+                                <div class="theme-option" data-theme="ocean" style="background: linear-gradient(135deg, #0984e3, #00cec9);">
+                                    <div class="theme-name">Ocean</div>
+                                </div>
+                            </div>
+                            <div class="glide__slide">
+                                <div class="theme-option" data-theme="sunset" style="background: linear-gradient(135deg, #e17055, #fdcb6e);">
+                                    <div class="theme-name">Sunset</div>
+                                </div>
+                            </div>
+                            <div class="glide__slide">
+                                <div class="theme-option" data-theme="forest" style="background: linear-gradient(135deg, #00b894, #55efc4);">
+                                    <div class="theme-name">Forest</div>
+                                </div>
+                            </div>
+                            <div class="glide__slide">
+                                <div class="theme-option" data-theme="violet" style="background: linear-gradient(135deg, #6c5ce7, #a29bfe);">
+                                    <div class="theme-name">Violet</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="hidden" id="theme" name="theme" value="light">
+            </div>
+            
+            <div class="save-btn-container">
+                <button type="submit" class="btn btn-primary btn-lg w-100">
+                    <i class="fas fa-save"></i> Save Settings
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Glide.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/glide.min.js"></script>
+    <script>
+        // Initialize theme carousel
+        new Glide('.glide', {
+            type: 'carousel',
+            perView: 4,
+            gap: 20,
+            breakpoints: {
+                992: { perView: 3 },
+                768: { perView: 2 },
+                576: { perView: 1 }
+            }
+        }).mount();
+
+        // Load saved settings
+        document.addEventListener('DOMContentLoaded', function() {
+            const savedTheme = localStorage.getItem('theme') || 'light';
+            const savedLanguage = localStorage.getItem('language') || 'en';
+            
+            // Apply saved theme
+            document.documentElement.setAttribute('data-theme', savedTheme);
+            document.getElementById('theme').value = savedTheme;
+            
+            // Update active theme in carousel
+            document.querySelectorAll('.theme-option').forEach(option => {
+                option.classList.remove('active');
+                if (option.dataset.theme === savedTheme) {
+                    option.classList.add('active');
+                }
+            });
+            
+            // Update active language
+            document.querySelectorAll('.language-option').forEach(option => {
+                option.classList.remove('active');
+                if (option.dataset.lang === savedLanguage) {
+                    option.classList.add('active');
+                }
+            });
+            document.getElementById('language').value = savedLanguage;
+        });
+
+        // Theme selection
+        document.querySelectorAll('.theme-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.theme-option').forEach(opt => {
+                    opt.classList.remove('active');
+                });
+                this.classList.add('active');
+                const theme = this.dataset.theme;
+                document.documentElement.setAttribute('data-theme', theme);
+                document.getElementById('theme').value = theme;
+            });
+        });
+
+        // Language selection
+        document.querySelectorAll('.language-option').forEach(option => {
+            option.addEventListener('click', function() {
+                document.querySelectorAll('.language-option').forEach(opt => {
+                    opt.classList.remove('active');
+                });
+                this.classList.add('active');
+                document.getElementById('language').value = this.dataset.lang;
+            });
+        });
+
+        // Form submission
+        document.getElementById('settingsForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const language = document.getElementById('language').value;
+            const theme = document.getElementById('theme').value;
+
+            // Save to localStorage
+            localStorage.setItem('language', language);
+            localStorage.setItem('theme', theme);
+
+            localStorage.setItem("googtrans", "/en/" + language);
+document.cookie = "googtrans=/en/" + language + ";path=/";
+
+            // Show success animation
+            const saveBtn = document.querySelector('.btn-primary');
+            saveBtn.innerHTML = '<i class="fas fa-check"></i> Saved!';
+            saveBtn.style.background = 'linear-gradient(135deg, #00b894, #55efc4)';
+            
+            setTimeout(() => {
+                saveBtn.innerHTML = '<i class="fas fa-save"></i> Save Settings';
+                saveBtn.style.background = 'linear-gradient(135deg, var(--primary-color), var(--secondary-color))';
+                
+                // Save settings to server
+     fetch('save_settings.php', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
+        language: language,
+        theme: theme
+    })
+})
+.then(response => response.json())
+.then(data => {
+
+    if(data.success){
+
+        localStorage.setItem("language", language);
+        localStorage.setItem("theme", theme);
+
+        localStorage.setItem("googtrans", "/en/" + language);
+
+        document.cookie =
+        "googtrans=/en/" + language + ";path=/";
+
+        setTimeout(function(){
+
+            window.location.href = "home.php";
+
+        },300);
+
+    }
+
+});
+            }, 1500);
+        });
+    </script>
+</body>
+</html>
