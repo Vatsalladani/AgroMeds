@@ -29,7 +29,6 @@ Helping users browse agricultural products, place orders, manage agricultural pu
 
 ---
 
-# 📑 Table of Contents
 
 ------------------------------------------------------------------------
 
@@ -364,35 +363,36 @@ http://localhost/Farming_meds
 
 # 🗄 Database Documentation
 
-Database Name:
+### Database Name
 
-``` text
+```text
 agriculture
 ```
 
-The application stores its data in a MySQL database consisting of **18
-tables**.
+AgroMeds uses a **MySQL relational database** consisting of **18 relational tables** to manage users, products, orders, payments, consultations, and other application data.
 
-  Table            Purpose
-  ---------------- --------------------------
-  admin            Administrator accounts
-  users            Registered users
-  products         Product information
-  category         Product categories
-  cart             Shopping cart
-  favorites        Favorite products
-  user_favorites   User favorite mapping
-  orders           Customer orders
-  order_items      Products inside an order
-  payments         Payment records
-  refunds          Refund requests
-  cancel_orders    Cancelled orders
-  experts          Agriculture experts
-  consultations    Consultation requests
-  feedback         User feedback
-  testimonials     Testimonials
-  contactus        Contact form messages
-  email_log        Email activity log
+### Database Tables
+
+| Table | Purpose |
+|--------|---------|
+| `admin` | Stores administrator account information and login credentials. |
+| `users` | Stores registered user accounts and profile information. |
+| `products` | Stores agricultural product details. |
+| `category` | Stores product categories. |
+| `cart` | Stores products added to the shopping cart. |
+| `favorites` | Stores favorite product records. |
+| `user_favorites` | Maps users to their favorite products. |
+| `orders` | Stores customer order information. |
+| `order_items` | Stores products associated with each order. |
+| `payments` | Stores payment details and transaction records. |
+| `refunds` | Stores refund request information. |
+| `cancel_orders` | Stores cancelled order records. |
+| `experts` | Stores agriculture expert profiles. |
+| `consultations` | Stores consultation requests between users and experts. |
+| `feedback` | Stores user feedback submitted through the platform. |
+| `testimonials` | Stores customer testimonials. |
+| `contactus` | Stores messages submitted through the contact form. |
+| `email_log` | Stores email activity and notification logs. |
 
 ------------------------------------------------------------------------
 
