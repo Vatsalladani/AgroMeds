@@ -137,19 +137,83 @@ http://localhost/Farming_meds/
 
 # 📸 Screenshots
 
-Project screenshots can be found inside the **screenshots/** folder.
+## 👨‍🌾 User Interface
 
-Suggested screenshots:
+### 🏠 Home Page
 
-- Home Page
-- Login Page
-- Product Page
-- Cart
-- Checkout
-- Payment
-- Orders
-- Admin Dashboard
+![Home Page](screenshots/01-home.png)
 
+### 🔐 Login Page
+
+![Login Page](screenshots/02-login.png)
+
+### 📝 Register Page
+
+![Register Page](screenshots/03-register.png)
+
+### 🛍 Products Page
+
+![Products Page](screenshots/04-products.png)
+
+### 📦 Product Details
+
+![Product Details](screenshots/05-product-details.png)
+
+### 🛒 Shopping Cart
+
+![Shopping Cart](screenshots/06-cart.png)
+
+### 💳 Checkout
+
+![Checkout](screenshots/07-checkout.png)
+
+### 📦 Orders
+
+![Orders](screenshots/08-orders.png)
+
+### 👤 User Profile
+
+![Profile](screenshots/09-profile.png)
+
+### 👨‍🌾 Expert Profile
+
+![Expert Profile](screenshots/10-expert-profile.png)
+
+---
+
+## 👨‍💼 Admin Panel
+
+### 🔐 Admin Login
+
+![Admin Login](screenshots/11-admin-login.png)
+
+### 📊 Dashboard
+
+![Dashboard](screenshots/12-admin-dashboard.png)
+
+### 📦 Product Management
+
+![Product Management](screenshots/13-admin-products.png)
+
+### 📋 Order Management
+
+![Order Management](screenshots/14-admin-orders.png)
+
+### 👥 User Management
+
+![User Management](screenshots/15-admin-users.png)
+
+### 🗂 Category Management
+
+![Category Management](screenshots/16-admin-categories.png)
+
+### 👨‍🌾 Expert Management
+
+![Expert Management](screenshots/17-admin-experts.png)
+
+### 💳 Payment Management
+
+![Payment Management](screenshots/18-admin-payments.png)
 ---
 
 # 🔒 Security Features
