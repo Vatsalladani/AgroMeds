@@ -1,241 +1,533 @@
-# 🌱 AgroMeds
+# 🌿 AgroMeds
 
-A modern Agriculture E-Commerce Platform built using PHP, MySQL, HTML, CSS and JavaScript.
-
-Designed to help farmers purchase agricultural products online, consult experts, place orders securely and manage their accounts through a user-friendly interface.
-
-
----
-
-# 🚀 Features
-
-## 👨‍🌾 User Features
-
-- User Registration & Login
-- Forgot Password using OTP Verification
-- Multilingual Support
-- Product Search
-- Shopping Cart
-- Favorites (Wishlist)
-- QR Code Payment
-- Cash on Delivery
-- Order Management
-- Purchase History
-- Reorder Products
-- User Profile
-
-## 👨‍💼 Admin Features
-
-- Secure Admin Login
-- Dashboard
-- Product Management
-- Category Management
-- User Management
-- Expert Management
-- Order Management
-- Payment Management
-- Testimonials Management
-- Contact Messages
-- Consultation Requests
-
-
----
-
-# 🛠 Tech Stack
-
-## Frontend
-
-- HTML5
-- CSS3
-- JavaScript
-
-## Backend
-
-- PHP
-
-## Database
-
-- MySQL
-
-## Libraries & Integrations
-
-- PHPMailer (Email & OTP)
-- Google Translate API
-- QR Code Generator
-
-
----
-
-# 📁 Project Structure
-
+```{=html}
+<p align="center">
+```
+`<img src="assets/logo.png" width="140" alt="AgroMeds Logo">`{=html}
+```{=html}
+</p>
+```
+```{=html}
+<h1 align="center">
 ```
 AgroMeds
-│
-├── admin/
-├── downloads/
-├── Images/
-├── Uploads/
-├── vendor/
-│
-├── home.php
-├── login.php
-├── register.php
-├── products.php
-├── checkout.php
-├── payment.php
-├── agriculture.sql
-│
-├── README.md
-├── LICENSE
-└── .gitignore
+```{=html}
+</h1>
+```
+```{=html}
+<p align="center">
+```
+`<b>`{=html}A PHP & MySQL Based Agriculture E-Commerce
+Platform`</b>`{=html}`<br>`{=html} Helping users browse agricultural
+products, place orders, and manage farming-related purchases through a
+web application.
+```{=html}
+</p>
+```
+```{=html}
+<p align="center">
+```
+`<img src="assets/banner.png" alt="AgroMeds Banner">`{=html}
+```{=html}
+</p>
+```
+```{=html}
+<p align="center">
+```
+![PHP](https://img.shields.io/badge/PHP-8.2-777BB4?logo=php)
+![MySQL](https://img.shields.io/badge/MySQL-10.4-4479A1?logo=mysql)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-5-7952B3?logo=bootstrap)
+![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?logo=javascript)
+![Status](https://img.shields.io/badge/Status-Completed-success)
+![License](https://img.shields.io/badge/License-MIT-green)
+
+```{=html}
+</p>
 ```
 
----
+------------------------------------------------------------------------
+
+# 📑 Table of Contents
+
+-   Overview
+-   Problem Statement
+-   Solution
+-   Project Highlights
+-   Core Features
+-   Technology Stack
+-   System Architecture
+-   Project Structure
+-   Security
+-   Database Overview
+-   Installation
+-   Screenshots
+-   Continue to Part 2
+
+------------------------------------------------------------------------
+
+# 📖 Overview
+
+AgroMeds is a full-stack web application developed using PHP, MySQL,
+Bootstrap and JavaScript.
+
+The project provides a web interface where users can browse agricultural
+products, manage a shopping cart, place orders, consult agricultural
+experts and manage their profile. An administrator panel is included for
+managing products, users, categories, orders and other application data.
+
+------------------------------------------------------------------------
+
+# 🎯 Problem Statement
+
+Traditional purchasing of agricultural products often requires visiting
+multiple stores and obtaining guidance from different sources. This
+project brings product browsing, ordering and basic consultation into a
+single web application.
+
+------------------------------------------------------------------------
+
+# 💡 Solution
+
+AgroMeds provides one platform where users can discover products,
+search, filter, place orders and interact with agriculture experts while
+administrators manage the platform through a dedicated dashboard.
+
+------------------------------------------------------------------------
+
+# ✨ Project Highlights
+
+-   Responsive Bootstrap interface
+-   User registration and login
+-   OTP email verification
+-   Product search
+-   Category filtering
+-   Shopping cart
+-   Wishlist
+-   QR payment support
+-   Cash on Delivery
+-   Expert consultation
+-   Google Translate integration
+-   Admin dashboard
+-   18 MySQL database tables
+
+------------------------------------------------------------------------
+
+# 🚀 Core Features
+
+## User
+
+-   Registration
+-   Login
+-   Profile Management
+-   Browse Products
+-   Product Search
+-   Category Filtering
+-   Wishlist
+-   Shopping Cart
+-   Checkout
+-   QR Payment
+-   Cash on Delivery
+-   Order History
+-   Expert Consultation
+-   Feedback Submission
+
+## Admin
+
+-   Dashboard
+-   Product Management
+-   Category Management
+-   User Management
+-   Order Management
+-   Payment Monitoring
+-   Refund Monitoring
+-   Testimonials
+-   Contact Messages
+
+------------------------------------------------------------------------
+
+# 🛠 Technology Stack
+
+  Category          Technology
+  ----------------- --------------------------------------
+  Frontend          HTML5, CSS3, Bootstrap 5, JavaScript
+  Backend           PHP
+  Database          MySQL
+  Mail              PHPMailer
+  Server            Apache (XAMPP)
+  Version Control   Git & GitHub
+
+------------------------------------------------------------------------
+
+# 🏗 System Architecture
+
+``` text
+Browser
+    │
+    ▼
+HTML • CSS • Bootstrap • JavaScript
+    │
+    ▼
+PHP Backend
+    │
+    ▼
+MySQL Database
+```
+
+------------------------------------------------------------------------
+
+# 📂 Project Organization
+
+```text
+AgroMeds/
+│
+├── admin/          → Administrator Panel
+├── assets/         → Static Assets
+├── Images/         → Product Images
+├── Uploads/        → Uploaded Files
+├── screenshots/    → README Screenshots
+├── vendor/         → Composer Libraries
+├── downloads/      → Download Resources
+│
+├── *.php           → Application Pages & Business Logic
+├── agriculture.sql → MySQL Database
+├── README.md
+└── LICENSE
+```
+------------------------------------------------------------------------
+
+# 🔒 Security
+
+-   Password hashing
+-   Prepared SQL statements
+-   Session authentication
+-   OTP email verification
+-   Server-side validation
+
+------------------------------------------------------------------------
+
+# 🗄 Database Overview
+
+Database Name:
+
+``` text
+agriculture
+```
+
+The project uses 18 relational tables for managing users, products,
+categories, orders, payments, consultations and other application data.
+
+------------------------------------------------------------------------
 
 # ⚙ Installation
 
 ## Requirements
 
-- XAMPP (Apache + MySQL)
-- PHP 8.x
-- MySQL
-- Web Browser
+-   PHP
+-   MySQL
+-   XAMPP
+-   Git
 
-## Setup
+## Clone
 
-1. Clone or download this repository.
-
-2. Copy the project folder into:
-
+``` bash
+git clone https://github.com/Vatsalladani/AgroMeds.git
 ```
+
+Move the project to:
+
+``` text
 xampp/htdocs/Farming_meds
 ```
 
-3. Open phpMyAdmin.
+Create database:
 
-4. Create a database named:
-
-```
+``` text
 agriculture
 ```
 
-5. Import:
+Import the SQL file, start Apache & MySQL, then open:
 
-```
-agriculture.sql
-```
-
-6. Start Apache and MySQL.
-
-7. Open your browser:
-
-```
-http://localhost/Farming_meds/
+``` text
+http://localhost/Farming_meds
 ```
 
----
+------------------------------------------------------------------------
 
-# 📸 Screenshots
+# 🖼 Screenshots
 
-## 👨‍🌾 User Interface
+## 🏠 User Module
 
-### 🏠 Home Page
+<p align="center">
+  <img src="screenshots/01-home.png" alt="Home Page" width="49%">
+  <img src="screenshots/02-login.png" alt="Login Page" width="49%">
+</p>
 
-![Home Page](screenshots/01-home.png)
+<p align="center">
+  <img src="screenshots/03-register.png" alt="Register Page" width="49%">
+  <img src="screenshots/04-products.png" alt="Products Page" width="49%">
+</p>
 
-### 🔐 Login Page
+<p align="center">
+  <img src="screenshots/05-product-details.png" alt="Product Details" width="49%">
+  <img src="screenshots/06-cart.png" alt="Shopping Cart" width="49%">
+</p>
 
-![Login Page](screenshots/02-login.png)
+<p align="center">
+  <img src="screenshots/07-checkout.png" alt="Checkout Page" width="49%">
+  <img src="screenshots/08-orders.png" alt="Orders Page" width="49%">
+</p>
 
-### 📝 Register Page
-
-![Register Page](screenshots/03-register.png)
-
-### 🛍 Products Page
-
-![Products Page](screenshots/04-products.png)
-
-### 📦 Product Details
-
-![Product Details](screenshots/05-product-details.png)
-
-### 🛒 Shopping Cart
-
-![Shopping Cart](screenshots/06-cart.png)
-
-### 💳 Checkout
-
-![Checkout](screenshots/07-checkout.png)
-
-### 📦 Orders
-
-![Orders](screenshots/08-orders.png)
-
-### 👤 User Profile
-
-![Profile](screenshots/09-profile.png)
-
-### 👨‍🌾 Expert Profile
-
-![Expert Profile](screenshots/10-expert-profile.png)
+<p align="center">
+  <img src="screenshots/09-profile.png" alt="User Profile" width="49%">
+  <img src="screenshots/10-expert-profile.png" alt="Expert Profile" width="49%">
+</p>
 
 ---
 
-## 👨‍💼 Admin Panel
+## 🛠 Admin Module
 
-### 🔐 Admin Login
+<p align="center">
+  <img src="screenshots/11-admin-login.png" alt="Admin Login" width="49%">
+  <img src="screenshots/12-admin-dashboard.png" alt="Admin Dashboard" width="49%">
+</p>
 
-![Admin Login](screenshots/11-admin-login.png)
+<p align="center">
+  <img src="screenshots/13-admin-products.png" alt="Manage Products" width="49%">
+  <img src="screenshots/14-admin-orders.png" alt="Manage Orders" width="49%">
+</p>
 
-### 📊 Dashboard
+<p align="center">
+  <img src="screenshots/15-admin-users.png" alt="Manage Users" width="49%">
+  <img src="screenshots/16-admin-categories.png" alt="Manage Categories" width="49%">
+</p>
 
-![Dashboard](screenshots/12-admin-dashboard.png)
+<p align="center">
+  <img src="screenshots/17-admin-experts.png" alt="Manage Experts" width="49%">
+  <img src="screenshots/18-admin-payments.png" alt="Manage Payments" width="49%">
+</p>
 
-### 📦 Product Management
+------------------------------------------------------------------------
 
-![Product Management](screenshots/13-admin-products.png)
 
-### 📋 Order Management
+# 🗄 Database Documentation
 
-![Order Management](screenshots/14-admin-orders.png)
+Database Name:
 
-### 👥 User Management
+``` text
+agriculture
+```
 
-![User Management](screenshots/15-admin-users.png)
+The application stores its data in a MySQL database consisting of **18
+tables**.
 
-### 🗂 Category Management
+  Table            Purpose
+  ---------------- --------------------------
+  admin            Administrator accounts
+  users            Registered users
+  products         Product information
+  category         Product categories
+  cart             Shopping cart
+  favorites        Favorite products
+  user_favorites   User favorite mapping
+  orders           Customer orders
+  order_items      Products inside an order
+  payments         Payment records
+  refunds          Refund requests
+  cancel_orders    Cancelled orders
+  experts          Agriculture experts
+  consultations    Consultation requests
+  feedback         User feedback
+  testimonials     Testimonials
+  contactus        Contact form messages
+  email_log        Email activity log
 
-![Category Management](screenshots/16-admin-categories.png)
+------------------------------------------------------------------------
 
-### 👨‍🌾 Expert Management
+# 🔐 Authentication Flow
 
-![Expert Management](screenshots/17-admin-experts.png)
+``` text
+User Registration
+        │
+        ▼
+OTP Verification
+        │
+        ▼
+Password Stored (Hashed)
+        │
+        ▼
+User Login
+        │
+        ▼
+Session Created
+```
 
-### 💳 Payment Management
+Authentication includes:
 
-![Payment Management](screenshots/18-admin-payments.png)
----
+-   User registration
+-   Login
+-   OTP verification
+-   Password hashing
+-   Session-based authentication
 
-# 🔒 Security Features
+------------------------------------------------------------------------
 
-- Password Hashing
-- Prepared Statements
-- Session Authentication
-- OTP Verification
-- Role-Based Authentication
+# 🛒 Product Workflow
 
----
+``` text
+Browse Products
+      │
+      ▼
+Search / Filter
+      │
+      ▼
+Product Details
+      │
+      ▼
+Add to Cart
+      │
+      ▼
+Checkout
+      │
+      ▼
+Place Order
+```
 
-# 🌍 Future Improvements
+Available product operations:
 
-- Docker Deployment
-- REST API
-- FastAPI Backend
-- AI Crop Recommendation
-- Online Payment Gateway
-- Mobile Application
+-   Browse products
+-   Search products
+-   Filter by category
+-   Wishlist support
+-   View product details
 
----
+------------------------------------------------------------------------
+
+# 🛍 Shopping Cart
+
+The cart module allows users to:
+
+-   Add products
+-   Update quantity
+-   Remove products
+-   View subtotal
+-   Proceed to checkout
+
+------------------------------------------------------------------------
+
+# 💳 Payment Module
+
+Supported payment methods:
+
+-   QR Code Payment
+-   Cash on Delivery (COD)
+
+Typical flow:
+
+``` text
+Checkout
+   │
+   ▼
+Select Payment Method
+   │
+   ▼
+Payment Record
+   │
+   ▼
+Order Confirmation
+```
+
+------------------------------------------------------------------------
+
+# 👨‍🌾 Expert Consultation
+
+Users can:
+
+-   View experts
+-   Send consultation requests
+-   Receive agriculture guidance through the platform
+
+------------------------------------------------------------------------
+
+# 📊 Admin Panel
+
+The administrator panel provides management for:
+
+-   Dashboard
+-   Products
+-   Categories
+-   Users
+-   Orders
+-   Payments
+-   Refunds
+-   Experts
+-   Testimonials
+-   Feedback
+-   Contact Messages
+
+------------------------------------------------------------------------
+
+# 📂 Important Modules
+
+## User Module
+
+-   Registration
+-   Login
+-   Profile
+-   Orders
+
+## Product Module
+
+-   Product browsing
+-   Product details
+-   Search
+-   Filtering
+
+## Cart Module
+
+-   Cart management
+-   Checkout
+
+## Payment Module
+
+-   QR payment
+-   Cash on Delivery
+
+## Consultation Module
+
+-   Agriculture experts
+-   Consultation requests
+
+## Admin Module
+
+-   Manage application data
+
+------------------------------------------------------------------------
+
+# ⚠ Known Limitations
+
+Current implementation does not include:
+
+-   REST API
+-   Docker support
+-   Mobile application
+-   Automated deployment
+-   Unit testing
+
+------------------------------------------------------------------------
+
+# 🚀 Future Improvements
+
+Possible future enhancements:
+
+-   REST API
+-   Mobile application
+-   Payment gateway integration
+-   Push notifications
+-   Email notifications
+-   AI-based crop recommendations
+-   Weather integration
+
+------------------------------------------------------------------------
 
 # 👨‍💻 Author
 
@@ -245,8 +537,18 @@ MSc IT Student
 
 Aspiring Software Engineer
 
----
+GitHub: https://github.com/Vatsalladani
 
-# 📜 License
+------------------------------------------------------------------------
+
+# 📄 License
 
 This project is licensed under the MIT License.
+
+------------------------------------------------------------------------
+
+# 🙏 Thank You
+
+Thank you for exploring the AgroMeds project.
+
+If you found this repository useful, consider giving it a ⭐ on GitHub.
