@@ -136,14 +136,14 @@ administrators manage the platform through a dedicated dashboard.
 
 # 🛠 Technology Stack
 
-  Category          Technology
-  ----------------- --------------------------------------
-  Frontend          HTML5, CSS3, Bootstrap 5, JavaScript
-  Backend           PHP
-  Database          MySQL
-  Mail              PHPMailer
-  Server            Apache (XAMPP)
-  Version Control   Git & GitHub
+| Category | Technology |
+|:---------|:-----------|
+| 🎨 **Frontend** | HTML5, CSS3, Bootstrap 5, JavaScript |
+| ⚙️ **Backend** | PHP |
+| 🗄 **Database** | MySQL |
+| 📧 **Mail Service** | PHPMailer |
+| 🖥 **Server** | Apache (XAMPP) |
+| 🌿 **Version Control** | Git & GitHub |
 
 ------------------------------------------------------------------------
 
