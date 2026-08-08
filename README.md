@@ -586,17 +586,17 @@ Possible future enhancements:
 
 **Vatsal Ladani**
 
-MSc IT Student
-
-Aspiring Software Engineer
+M.Sc. Information Technology Student · Aspiring Software Engineer
 
 GitHub: https://github.com/Vatsalladani
 
 ------------------------------------------------------------------------
 
-# 📄 License
+## 📜 License
 
-This project is licensed under the MIT License.
+This project is licensed under the **MIT License**.
+
+See the [LICENSE](./LICENSE) file for details.
 
 ------------------------------------------------------------------------
 
