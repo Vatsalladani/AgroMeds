@@ -1,6 +1,8 @@
 <?php
 session_start(); // Start session to check login status
 
+
+
 // Check if the user is logged in
 $isLoggedIn = isset($_SESSION['user_id']); // Replace 'user_id' with your session variable for logged-in users
 $conn = new mysqli("localhost", "root", "", "agriculture");
@@ -734,7 +736,7 @@ footer a:hover {
     </a>
 
     <!-- GitHub -->
-    <a href="https://github.com/Vatsalladani"
+    <a href="https://github.com/Vatsalladani/AgroMeds"
        target="_blank"
        rel="noopener noreferrer"
        title="GitHub">
@@ -742,7 +744,7 @@ footer a:hover {
     </a>
 
     <!-- Portfolio (Coming Soon) -->
-    <a href="javascript:void(0);"
+    <a href="https://vatsalladani.me/"
        title="Portfolio Coming Soon">
         <i class="fas fa-globe"></i>
     </a>
@@ -848,7 +850,7 @@ footer a:hover {
 <h5 data-lang-key="followUs">Follow Us</h5>
 <ul class="list-inline">
 
-    <!-- LinkedIn -->
+      <!-- LinkedIn -->
     <li class="list-inline-item">
         <a href="https://www.linkedin.com/in/vatsalladani"
            target="_blank"
@@ -859,7 +861,7 @@ footer a:hover {
 
     <!-- GitHub -->
     <li class="list-inline-item">
-        <a href="https://github.com/Vatsalladani"
+        <a href="https://github.com/Vatsalladani/AgroMeds"
            target="_blank"
            rel="noopener noreferrer">
             <i class="fab fa-github"></i>
@@ -868,7 +870,7 @@ footer a:hover {
 
     <!-- Portfolio (Coming Soon) -->
     <li class="list-inline-item">
-        <a href="javascript:void(0);"
+        <a href="https://vatsalladani.me/"
            title="Portfolio Coming Soon">
             <i class="fas fa-globe"></i>
         </a>

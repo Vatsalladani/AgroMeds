@@ -34,8 +34,8 @@ if ($contact_id > 0 && !empty($email) && !empty($reply_message)) {
         $mail->isSMTP();
         $mail->Host       = 'smtp.gmail.com';
         $mail->SMTPAuth   = true;
-        $mail->Username   = 'agromeds.official.1@gmail.com'; // Your Gmail address
-        $mail->Password   = 'REMOVED_GMAIL_APP_PASSWORD'; // Your Gmail App Password
+ $mail->Username   = 'agromeds.official.1@gmail.com'; // Your Gmail address
+        $mail->Password   = 'YOUR_GMAIL_APP_PASSWORD'; // Your Gmail App Password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS; // Use TLS
         $mail->Port       = 587; // TCP port to connect to
 

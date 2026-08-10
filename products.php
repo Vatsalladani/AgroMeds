@@ -1466,7 +1466,6 @@ footer a:hover {
          <!-- Follow Us Section -->
 <h5 data-lang-key="followUs">Follow Us</h5>
 <ul class="list-inline">
-
     <!-- LinkedIn -->
     <li class="list-inline-item">
         <a href="https://www.linkedin.com/in/vatsalladani"
@@ -1478,7 +1477,7 @@ footer a:hover {
 
     <!-- GitHub -->
     <li class="list-inline-item">
-        <a href="https://github.com/Vatsalladani"
+        <a href="https://github.com/Vatsalladani/AgroMeds"
            target="_blank"
            rel="noopener noreferrer">
             <i class="fab fa-github"></i>
@@ -1487,7 +1486,7 @@ footer a:hover {
 
     <!-- Portfolio (Coming Soon) -->
     <li class="list-inline-item">
-        <a href="javascript:void(0);"
+        <a href="https://vatsalladani.me/"
            title="Portfolio Coming Soon">
             <i class="fas fa-globe"></i>
         </a>

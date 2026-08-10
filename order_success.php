@@ -41,8 +41,8 @@ try {
     $mail->isSMTP();
     $mail->Host = 'smtp.gmail.com';
     $mail->SMTPAuth = true;
-    $mail->Username = 'agromeds.official.1@gmail.com';
-    $mail->Password = 'REMOVED_GMAIL_APP_PASSWORD';
+ $mail->Username   = 'agromeds.official.1@gmail.com'; // Your Gmail address
+        $mail->Password   = 'YOUR_GMAIL_APP_PASSWORD'; // Your Gmail App Password
     $mail->SMTPSecure = 'tls';
     $mail->Port = 587;
 
