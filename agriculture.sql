@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 21, 2026 at 03:17 PM
+-- Generation Time: Aug 10, 2026 at 07:02 PM
 -- Server version: 10.4.32-MariaDB
 -- PHP Version: 8.2.12
 
@@ -41,7 +41,8 @@ CREATE TABLE `admin` (
 --
 
 INSERT INTO `admin` (`admin_id`, `name`, `email`, `password`, `role`, `created_at`) VALUES
-(1, 'Ladani Vatsal', 'ladanivatsal@gmail.com', '$2y$10$POPI6GMnscY51YQhtd7WzuuFzCfVP2Q4KFHiskWr64MvM4kG3cTju', 'admin', '2025-04-25 09:57:35');
+(1, 'Ladani Vatsal', 'ladanivatsal@gmail.com', '$2y$10$POPI6GMnscY51YQhtd7WzuuFzCfVP2Q4KFHiskWr64MvM4kG3cTju', 'admin', '2025-04-25 09:57:35'),
+(5, 'Admin', 'admin@gmail.com', '$2a$16$FgDxtDq22eNGNb.Br2gVauXuYn6ohhEFaVpvWcUNry6pnaStYct5G', 'admin', '2026-08-10 16:17:23');
 
 -- --------------------------------------------------------
 
@@ -483,7 +484,7 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `full_name`, `email`, `phone`, `address`, `city`, `pincode`, `profile_photo`, `password`, `created_at`, `role`, `logged_in`) VALUES
 (1, 'Uday Boda', 'udayboda@gmail.com', '3333333333', 'Jamnagar, Shapar', 'Jamnagar', '361001', '../Uploads/Users/Ch4.jpeg', '$2y$10$OfxwAn.elKrg.D6MleqJ/OVVQON2JNaOYPSl1q6p9A/7.cUesqnSW', '2024-12-22 09:51:06', 'user', 0),
 (2, 'Uday Boda', 'admin123@gmail.com', '2222222222', 'Abcd', 'Jamnagar', '361001', '../Uploads/Users/Ch1.jpeg', '$2y$10$OkiGl5vL2pHArzZ/1Ap/5OTMVRNdpLZ0bHsXmNLNIukcJ9DaUD3De', '2024-12-22 09:56:20', 'user', 0),
-(3, 'ladani vatsal', 'ladanivatsal@gmail.com', '1111111111', 'junagadh', 'junagadh', '362001', '../Uploads/Users/ch11.jpeg', '$2a$12$U403QSPoYpoZuZa5ytppLOk8r698YJGqdJiDwKio/WEDzj2VN9P8W', '2025-04-25 10:13:15', 'user', 1);
+(3, 'ladani vatsal', 'vatsalladani.it@gmail.com', '1111111111', 'junagadh', 'junagadh', '362001', 'Uploads/Users/1786379120_1784572156_Ch1.jpeg', '$2a$12$U403QSPoYpoZuZa5ytppLOk8r698YJGqdJiDwKio/WEDzj2VN9P8W', '2025-04-25 10:13:15', 'user', 1);
 
 -- --------------------------------------------------------
 
@@ -649,7 +650,7 @@ ALTER TABLE `user_favorites`
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
-  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `admin_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `cancel_orders`
